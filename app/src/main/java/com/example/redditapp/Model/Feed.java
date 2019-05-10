@@ -18,10 +18,10 @@ public class Feed implements Serializable {
     @Element(name = "id")
     private String id;
 
-    @Element(name = "logo")
+    @Element(required = false, name = "logo")
     private String logo;
 
-    @Element(name = "subtitle")
+    @Element(name = "subtitle",required = false)
     private String subtitle;
 
     @Element(name = "updated")
